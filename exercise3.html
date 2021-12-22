@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP1_ex3</title>
+  <style>
+        .wrapper{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height:500px;
+}
+.small{
+  background-color:rgb(179, 19, 19);
+  padding:10px;
+  width:40px;
+  color:aliceblue;
+  text-align:center;
+  border-radius:5px;
+}
+.big{
+  background-color:green;
+  padding:10px;
+  width:40px;
+  color:aliceblue;
+  text-align:center;
+  border-radius:5px;
+}
+@media screen and (max-width:500px) {
+  .big{
+      display: none;
+  }
+}
+@media screen and (min-width:501px) {
+  .small{
+      display: none;
+  }
+}
+
+
+
+  </style>
+</head>
+<body>
+      <div class="wrapper">
+          <div class="content">
+            <span class="small">I'm SMALL 😢.</span>
+            <span class="big">I'm BIG 😱.</span>
+          </div>
+      </div>
+</body>
+</html>
